@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. GRD College Library</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+      }
+      header {
+        background-color: #004d99;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        text-align: center;
+        background-color: #003366;
+        padding: 15px 0;
+      }
+      nav li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: #ffcc00;
+      }
+      .hero {
+        background: url("images/library.jpg") no-repeat center center/cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2em;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      }
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      .feature-card {
+        background: #e3f2fd;
+        padding: 20px;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .feature-card h3 {
+        color: #003366;
+      }
+      footer {
+        background: #003366;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dr. GRD College of Arts and Science Library</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="auditorium.html">Auditorium</a></li>
+        <li><a href="infra.html">Infra</a></li>
+        <li><a href="basketball.html">Basketball</a></li>
+        <li><a href="classroom.html">Classroom</a></li>
+        <li><a href="computerlab.html">Computer Lab</a></li>
+        <li><a href="cafeteria.html">Cafeteria</a></li>
+        <li><a href="library.html">Library</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h2>Welcome to Our Library</h2>
+    </div>
+    <div class="container">
+      <h2>About Our Library</h2>
+      <p>
+        The GRD College of Science Library serves as a hub of knowledge,
+        supporting students and faculty in their academic and research pursuits.
+      </p>
+      <div class="features">
+        <div class="feature-card">
+          <h3>📚 Vast Collection</h3>
+          <p>
+            Thousands of books, journals, and research papers across various
+            disciplines.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>💻 Digital Resources</h3>
+          <p>Access to e-books, online journals, and research databases.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🛋️ Study Spaces</h3>
+          <p>Quiet reading zones and collaborative study areas.</p>
+        </div>
+        <div class="feature-card">
+          <h3>📡 Tech Integration</h3>
+          <p>Computer labs, high-speed internet, and digital catalogs.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🧑‍🏫 Assistance</h3>
+          <p>Dedicated staff to help students utilize resources effectively.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        &copy; 2025 GRD College Library |
+        <a href="#" style="color: #ffcc00">Privacy Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>

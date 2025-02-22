@@ -1,140 +1,135 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. GRD College of Arts and Science Library</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. GRD College Library</title>
     <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      header {
-        background-color: #e0f7fa;
-        padding: 20px;
-        text-align: center;
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 10px 0;
-        text-align: center;
-      }
-
-      nav li {
-        display: inline;
-        margin: 0 20px;
-      }
-
-      nav li a {
-        text-decoration: none;
-        color: blue;
-        font-weight: bold;
-      }
-      nav li a:hover {
-        color: orange;
-      }
-
-      .main-title-section {
-        background-color: #bae8ff;
-        padding: 20px 40px;
-        text-align: center;
-        font-size: 2em;
-        font-weight: bold;
-      }
-
-      .image-section {
-        background-color: #c8e6c9; /* Light green */
-        padding: 0;
-        text-align: center;
-        height: 350px;
-        overflow: hidden;
-      }
-
-      .image-section img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .content-section {
-        background-color: #e0e0e0; /* Light gray */
-        padding: 40px;
-        text-align: center;
-        flex-grow: 1;
-      }
-
-      footer {
-        background-color: #b8b8b8;
-        padding: 20px;
-        text-align: center;
-      }
-
-      footer a {
-        margin: 0 15px;
-        text-decoration: none;
-      }
-
-      h1, h2, h3 {
-        color: #333;
-      }
-
-      p {
-        line-height: 1.6;
-        color: #555;
-        max-width: 800px;
-        margin: 20px auto;
-        text-align: left;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+            background-color: #003366;
+            padding: 15px 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            background: url('images/library.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .feature-card {
+            background: #e3f2fd;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            color: #003366;
+        }
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Dr. GRD College of Arts and Science Library</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+        <h1>Dr. GRD College of Arts and Science Library</h1>
     </header>
-
-    <div class="main-title-section">
-      <h2>Welcome to Our Library</h2>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Welcome to Our Library</h2>
     </div>
-
-    <div class="image-section">
-      <img src="images/library.jpg" alt="Library Image" />
+    <div class="container">
+        <h2>About Our Library</h2>
+        <p>The GRD College of Science Library serves as a hub of knowledge, supporting students and faculty in their academic and research pursuits.</p>
+        <div class="features">
+            <div class="feature-card">
+                <h3>📚 Vast Collection</h3>
+                <p>Thousands of books, journals, and research papers across various disciplines.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💻 Digital Resources</h3>
+                <p>Access to e-books, online journals, and research databases.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛋️ Study Spaces</h3>
+                <p>Quiet reading zones and collaborative study areas.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📡 Tech Integration</h3>
+                <p>Computer labs, high-speed internet, and digital catalogs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧑‍🏫 Assistance</h3>
+                <p>Dedicated staff to help students utilize resources effectively.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="content-section">
-      <h3>About Our Library</h3>
-      <p>
-        The GRD College of Science Library serves as a hub of knowledge, supporting students and faculty in their academic and research pursuits. With an extensive collection of books, journals, e-resources, and digital archives, the library fosters a culture of learning and intellectual growth.
-      </p>
-      <p>
-        Our well-equipped facility provides a peaceful and conducive environment for study, research, and group discussions. The library offers:
-      </p>
-      <ul>
-        <li>📚 A vast collection – Thousands of books, research papers, and periodicals across various disciplines.</li>
-        <li>💻 Digital Resources – Access to e-books, online journals, and research databases.</li>
-        <li>🛋️ Comfortable Study Spaces – Quiet reading zones and collaborative study areas.</li>
-        <li>📡 Technology Integration – Computer labs, high-speed internet, and digital catalogs for efficient resource access.</li>
-        <li>🧑‍🏫 Library Assistance – Dedicated staff to help students locate and utilize resources effectively.</li>
-      </ul>
-      <p>
-        Committed to academic excellence, the GRD College of Science Library plays a crucial role in enriching the educational experience, providing students with the resources they need to succeed in their studies and research endeavors.
-      </p>
-    </div>
-
     <footer>
-      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        <p>&copy; 2025 GRD College Library | <a href="#" style="color: #ffcc00;">Privacy Policy</a></p>
     </footer>
-  </body>
+</body>
 </html>
